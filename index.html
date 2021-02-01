@@ -8,19 +8,30 @@
     </head>
     <body>
         <header id=header>
-            <div>
+            <div class="logo">
                 <img id="header-img" src="" alt="">
             </div>
             <nav id="nav-bar">
                 <ul>
-                    <li class="nav-link"><a href="#"></a></li>
-                    <li class="nav-link"><a href="#"></a></li>
-                    <li class="nav-link"><a href="#"></a></li>
+                    <li class="nav-link"><a href="#home">Home</a></li>
+                    <li class="nav-link"><a href="#choose">Which to choose</a></li>
+                    <li class="nav-link"><a href="#products">Products</a></li>
+                    <li class="nav-link"><a href="#information">Information</a></li>
                 </ul>
             </nav>
         </header>
         <main class="container">
-            <section class="form-email">
+            <section id="home">
+                <h2>Dog food</h2>
+            </section>
+            <section id="choose">
+                <h2>How to choose a dog's food</h2>
+                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/vTEILFu3XI4?start=8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </section>
+            <section id="products">
+                <h2>Products</h2>
+            </section>
+            <section id="information" class="form-email">
                 <h2>Conoce mas de nosotros</h2>
                 <form id="form" action="https://www.freecodecamp.com/email-submit">
                     <label for="email">Email</label>
@@ -29,6 +40,8 @@
                 </form>
             </section>
         </main>
+        <footer>
+        </footer>
         <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>   
     </body>
 </html>
