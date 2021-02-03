@@ -1,0 +1,126 @@
+/*font-family: 'Nunito Sans', sans-serif;*/
+body{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #ededed;
+}
+/*header*/
+#header{
+    width: 100%;
+    min-height: 75px ;
+    background-color:#41e0bb;
+    top:0;
+    position: fixed;
+    z-index: 100;
+    -webkit-box-shadow: 1px 17px 28px -3px rgba(0,0,0,0.2);
+    -moz-box-shadow: 1px 17px 28px -3px rgba(0,0,0,0.2);
+    box-shadow: 1px 17px 28px -3px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+#header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.logo{
+    width:50vw;
+    text-align: left;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+    max-width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.nav-bar{
+    width:50vw;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    justify-self: center;
+}
+a{
+    text-decoration: none;
+    color:white;
+    text-shadow:-1px 1px 3px #0a0e27;
+}
+li.nav-link{
+    font-size:1.2rem;
+    margin-left: 20px;
+}
+
+footer{
+    width: 100%;
+    max-height:200px ;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top:20px;
+}
+
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.home{
+    background-image: url(/image/group-portrait-of-adorable-puppies.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+h1.texth1{
+    text-align: center;
+    padding: 150px;
+    margin:0 auto;
+    font-size: 6rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    line-height: 1;
+    color:white;
+    text-shadow:-8px 2px 0 rgba(65,224,187),-20px 10px 10px rgba(0,0,0,0.3)  ;
+    box-sizing: border-box;
+}
+.choose{
+    text-align: center; 
+    height: 100vh;
+}
+.texth2{
+    font-size:3rem;
+    font-weight:700;
+    color:#41e0bb;
+    margin-bottom: 70px;
+    text-align: center;
+ }
+
+.products{
+     display:flex;
+     align-self: center;
+ }
+.product{
+     display:flex;
+     flex-direction:column ;
+     justify-content: space-between;
+     box-sizing: border-box;
+     overflow: hidden;
+ }
+.product .img-product{
+    width: 400px;
+    max-height: 300px;
+ }
+ .imgProduct{
+     width:100%;
+     height: 100%;
+ }
