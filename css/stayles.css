@@ -25,10 +25,11 @@ body{
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
+    max-width: 1140px;
 }
 
 .logo{
-    width:50vw;
+    width:40vw;
     text-align: left;
 }
 .logo img{
@@ -42,7 +43,7 @@ body{
 }
 
 .nav-bar{
-    width:50vw;
+    width:60vw;
 }
 ul{
     list-style: none;
@@ -59,7 +60,9 @@ li.nav-link{
     font-size:1.2rem;
     margin-left: 20px;
 }
-
+li.nav-link:hover{
+    font-weight: 700;
+}
 footer{
     width: 100%;
     max-height:200px ;
@@ -69,13 +72,10 @@ footer{
     padding: 20px;
     margin-top:20px;
 }
-
-.container{
+.containerx{
     max-width: 1140px;
     margin: 0 auto;
-    overflow: hidden;
 }
-
 .home{
     background-image: url(../image/group-portrait-of-adorable-puppies.jpg);
     background-size: cover;
@@ -96,7 +96,6 @@ h1.texth1{
 }
 .choose{
     text-align: center; 
-    height: 100vh;
 }
 .texth2{
     font-size:3rem;
@@ -105,9 +104,6 @@ h1.texth1{
     margin-bottom: 70px;
     text-align: center;
  }
-/* #products{
-    
-} */
 .products{
      display:flex;
      flex-direction: row;
@@ -121,6 +117,9 @@ h1.texth1{
      margin: 0 5px;
      border:0.5px solid #41e0bb;
      width: calc(100%/3);
+     background-color:white;
+     border-radius:15px;
+     overflow: hidden;
  }
 .product .img-product{
     width: 100%;
@@ -130,6 +129,7 @@ h1.texth1{
  .imgProduct{
      width:100%;
      height: 100%;
+
  }
  .infoProduct{
      margin: 10px;
@@ -151,8 +151,14 @@ h1.texth1{
      font-weight: 700;
      margin:10px auto;
      margin-top:0;
+     border-radius: 20px;
+     outline: none;
  }
- 
+ .btn:hover{
+     background-color: #35bb9c ;
+     cursor: pointer;
+ }
+
  .form-group{
      text-align: center;
      display:block;
@@ -160,9 +166,121 @@ h1.texth1{
      box-sizing: border-box;
      margin-bottom: 50px;
  }
-
  .inputemail{
         height: 30px;
         width: 300px;
         border:1px solid #41e0bb;
+        border-radius:20px;
+        font-size: 1.2rem;   
  }
+ .inputemail:focus{
+        outline: none;
+        color:#41e0bb;
+ }
+
+ @media screen and (max-width:768px){
+    .logo{
+        width:30vw;
+    }
+    .logo img{
+        max-width: 180px;
+    }
+    
+    .nav-bar{
+        width:70vw;
+    }
+
+    li.nav-link{
+        font-size:1rem;
+    }
+    main{
+        width: 100vw;
+        margin: 0;
+    }
+    .containerx{
+        max-width: 720px;
+        margin:0 auto;
+    }
+    .home{
+        background-image: url(../image/beautiful-shot-of-different-dog-breeds-resting.jpg);
+    }
+    h1.texth1{
+        text-align: center;
+        padding:150px 0 0 0;
+        font-size: 4rem;
+        text-shadow:-5px 1px 0 rgba(65,224,187),-15px 8px 8px rgba(0,0,0,0.3)  ;
+    }
+    .texth2{
+        font-size:2rem;
+        margin-bottom: 60px;
+        
+     }
+     .products{
+     display:flex;
+     flex-direction: row;
+     justify-content: space-around;
+ }
+    .product{
+        justify-content: space-between;
+    }
+    .product .img-product{
+        height: 190px;
+    }
+    .infoProduct{
+        margin:0 10px;
+    }
+    .infoProduct h3 ,p{
+        margin:5px 0;
+    }
+} 
+@media screen and (max-width:576px){
+    /*header*/
+    #header .container{
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        max-width: 540px;
+    }
+    .logo{
+        margin-top:20px;
+    }
+    .logo img{
+        width: 100%;
+        height: 100%;
+        max-width: 150px;
+    }
+    .nav-bar{
+        width:100%;
+    }
+    ul{
+        display: flex;
+        justify-content: space-around;
+        justify-self:left;
+        padding: 0;
+    }
+    li.nav-link{
+        font-size:0.9rem;
+        margin-left: 7px;
+        margin-right: 7px;
+    }
+    /*header*/
+    /*home*/
+
+    /*home*/
+
+ } 
+@media screen and (max-width:480px){
+    #header-img{
+        margin:0;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        justify-self:center;
+        padding: 0;
+    }
+    li.nav-link{
+        text-align: center;
+    }
+}
