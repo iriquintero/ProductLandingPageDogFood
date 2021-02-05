@@ -27,24 +27,10 @@ header{
     box-sizing: border-box;
     padding: 0 30px;
 }
-
-/* @media (max-width: 600px) {
-    header {
-      flex-wrap: wrap;
-      margin-bottom:300px ;
-    }
-  } */
 .logo{
     width:60vw;
     text-align: left;
 }
-/* @media (max-width: 650px) {
-    .logo {
-      margin-top: 15px;
-      width: 100%;
-      position: relative;
-    }
-  } */
 .logo img{
     width: 100%;
     height: 100%;
@@ -55,13 +41,6 @@ header{
     text-align: center;
     margin-left: 15px;
 }
-
-/* @media (max-width: 650px) {
-    .logo > img {
-      margin: 0 auto;
-    }
-  } */
-
 nav ul{
     list-style: none;
     display: flex;
@@ -69,11 +48,6 @@ nav ul{
     justify-content: space-between;
     justify-self: center;
 }
-/* @media (max-width: 650px) {
-    nav  ul {
-      flex-direction: column;
-    }
-  } */
 a{
     text-decoration: none;
     color:white;
@@ -86,22 +60,6 @@ nav li{
 nav li:hover{
     font-weight: 700;
 }
-/* @media (max-width: 650px) {
-    nav {
-      margin-top: 10px;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      padding: 0 50px;
-    }
-    nav li {
-      padding-bottom: 10px;
-      font-size: 1em;
-    }
-  } */
-  
 footer{
     width: 100%;
     max-height:200px ;
@@ -121,13 +79,6 @@ footer{
     height: 100vh;
     overflow: hidden;
 }
-/* @media (max-width:600px) {
-    .home{
-        background-image: url(image/beautiful-shot-of-different-dog-breeds-resting.jpg);
-        background-size:cover;
-        height:800px;
-     }
-} */
 h1.texth1{
     text-align: center;
     padding-top: 150px;
@@ -140,14 +91,6 @@ h1.texth1{
     text-shadow:-8px 2px 0 rgba(65,224,187),-20px 10px 10px rgba(0,0,0,0.3);
     box-sizing: border-box;
 }
-@media (max-width:650px) {
-    h1.texth1{
-        font-size:3rem;
-        text-shadow:-8px 2px 0 rgba(65,224,187),-20px 10px 10px rgba(0,0,0,0.3);
-        padding-top:200px;
-     }
-}
-
 .choose{
     text-align: center; 
 }
@@ -236,6 +179,8 @@ h1.texth1{
      padding-left:10px ;
  }
 
+/*medias*/
+
  @media (max-width:768px){
     header{
         flex-wrap: wrap;
@@ -301,7 +246,7 @@ h1.texth1{
         flex-direction: column;
         justify-content:center;
         align-items: center;
-        max-width: 540px;
+        max-width: 100%;
     }
     .logo{
         margin-top:20px;
@@ -326,13 +271,14 @@ h1.texth1{
         margin-left: 7px;
         margin-right: 7px;
     }
-    .containerx{
+    .container{
         max-width: 540px;
         margin:0 auto;
+        box-sizing: border-box;
     }
     .home{
         background-image: url(image/beautiful-shot-of-different-dog-breeds-resting.jpg);
-        margin-top:100px;
+        margin-top:0px;
     }
     h1.texth1{
         text-align: center;
@@ -360,13 +306,12 @@ h1.texth1{
      justify-content: center;
      margin:0 auto;
      box-sizing: border-box;
+     overflow: hidden;
+     padding: 0 16px;
  }
  .product{
-    justify-content: center;
-    margin-bottom:20px;
-    border:0.5px solid #41e0bb;
     width:100%;
-    border-radius:15px;
+    margin:10px 0;
     box-sizing: border-box;
 }
 .product .img-product{
@@ -374,33 +319,57 @@ h1.texth1{
    height: 350px;
    text-align: center;
 }
-.imgProduct{
-    width:100%;
-    height: 100%;
 
-}
-.infoProduct{
-    margin: 10px;
-    text-align:left ;
-}
-.infoProduct h3{
-    color:#41e0bb;
-    font-size: 1.5rem;
-    font-weight: 700;
-}
- } 
+} 
 @media (max-width:480px){
+    .home{
+        background-image: url(image/beautiful-shot-of-different-dog-breeds-resting2.jpg);
+        margin-top:100px;
+    }
     .logo img{
         margin:0;
-    }
-    ul{
-        display: flex;
-        flex-direction: column;
-        justify-content:center;
-        justify-self:center;
-        padding: 0;
     }
     nav li{
         text-align: center;
     }
+    h1.texth1{
+        padding:250px 0 0 0;
+        font-size: 2.5rem;
+        text-shadow:-3px 1px 0 rgba(65,224,187),-12px px 3px rgba(0,0,0,0.5)  ;
+    }
+    .container{
+        max-width:auto;
+        margin:0 auto;
+        box-sizing: border-box;
+    }
+    .products{
+        margin:0 auto;
+        padding:0px 12px;
+    }
+    .product{
+       justify-content: center;
+       margin-bottom:20px;
+       border:0.5px solid #41e0bb;
+       width:100%;
+       border-radius:15px;
+       box-sizing: border-box;
+       margin:10px 0;
+   }
+   .product .img-product{
+      width: 100%;
+      height: 350px;
+      text-align: center;
+   } 
+   .form-group{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top:30px;
+    margin-bottom: 30px;
+}
+.inputemail{
+       margin:10px auto; 
+}
+
 }
