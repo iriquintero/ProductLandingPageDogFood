@@ -28,23 +28,23 @@ header{
     padding: 0 30px;
 }
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
     header {
       flex-wrap: wrap;
       margin-bottom:300px ;
     }
-  }
+  } */
 .logo{
     width:60vw;
     text-align: left;
 }
-@media (max-width: 650px) {
+/* @media (max-width: 650px) {
     .logo {
       margin-top: 15px;
       width: 100%;
       position: relative;
     }
-  }
+  } */
 .logo img{
     width: 100%;
     height: 100%;
@@ -56,11 +56,11 @@ header{
     margin-left: 15px;
 }
 
-@media (max-width: 650px) {
+/* @media (max-width: 650px) {
     .logo > img {
       margin: 0 auto;
     }
-  }
+  } */
 
 nav ul{
     list-style: none;
@@ -69,11 +69,11 @@ nav ul{
     justify-content: space-between;
     justify-self: center;
 }
-@media (max-width: 650px) {
+/* @media (max-width: 650px) {
     nav  ul {
       flex-direction: column;
     }
-  }
+  } */
 a{
     text-decoration: none;
     color:white;
@@ -86,7 +86,7 @@ nav li{
 nav li:hover{
     font-weight: 700;
 }
-@media (max-width: 650px) {
+/* @media (max-width: 650px) {
     nav {
       margin-top: 10px;
       width: 100%;
@@ -100,7 +100,7 @@ nav li:hover{
       padding-bottom: 10px;
       font-size: 1em;
     }
-  }
+  } */
   
 footer{
     width: 100%;
@@ -121,13 +121,13 @@ footer{
     height: 100vh;
     overflow: hidden;
 }
-@media (max-width:600px) {
+/* @media (max-width:600px) {
     .home{
         background-image: url(image/beautiful-shot-of-different-dog-breeds-resting.jpg);
         background-size:cover;
         height:800px;
      }
-}
+} */
 h1.texth1{
     text-align: center;
     padding-top: 150px;
@@ -236,7 +236,7 @@ h1.texth1{
      padding-left:10px ;
  }
 
- /* @media (max-width:768px){
+ @media (max-width:768px){
     header{
         flex-wrap: wrap;
     }
@@ -403,4 +403,4 @@ h1.texth1{
     nav li{
         text-align: center;
     }
-} */
+}
